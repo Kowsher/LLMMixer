@@ -43,7 +43,7 @@
 
 <p align="center">
 
-<img src="./figures/llmmixer.png" width="270">
+<img src="./figures/llmmixer.png" width="570">
 
 </p>
 
