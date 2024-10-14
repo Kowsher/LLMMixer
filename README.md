@@ -80,4 +80,4 @@ We appreciate the following GitHub repos a lot for their valuable code and effor
 - TimeMixer ([https://github.com/kwuking/TimeMixer](https://github.com/kwuking/TimeMixer))
 - TimeLLM ([https://github.com/thuml/Autoformer](https://github.com/KimMeen/Time-LLM))
 - Autoformer (https://github.com/thuml/Autoformer)
-
+- Autoformer ([https://github.com/thuml/Autoformer](https://github.com/thuml/iTransformer))
