@@ -7,9 +7,9 @@
 
 <div align="center">
 
-![](https://img.shields.io/github/last-commit/KimMeen/Time-LLM?color=green)
-![](https://img.shields.io/github/stars/kwuking/TimeMixer?color=yellow)
-![](https://img.shields.io/github/forks/kwuking/TimeMixer?color=lightblue)
+![](https://img.shields.io/github/last-commit/Kowsher/LLMMixer?color=green)
+![](https://img.shields.io/github/stars/Kowsher/LLMMixer?color=yellow)
+![](https://img.shields.io/github/forks/Kowsher/LLMMixer?color=lightblue)
 ![](https://img.shields.io/badge/PRs-Welcome-green)
 
 </div>
