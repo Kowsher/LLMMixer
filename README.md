@@ -71,8 +71,7 @@ Use Python 3.11 from MiniConda
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download the all datasets from [Google Driver](https://drive.google.com/u/0/uc?id=1NF7VEefXCmXuWNbnNe858WvQAkJ_7wuP&export=download), [Baidu Driver](https://pan.baidu.com/share/init?surl=r3KhGd0Q9PJIUZdfEYoymg&pwd=i9iy) or [Kaggle Datasets](https://www.kaggle.com/datasets/wentixiaogege/time-series-dataset). **All the datasets are well pre-processed** and can be used easily.
 3. Train the model by following the example of `./scripts`. 
-## Datasets
-You can access the datasets from hugginface
+
 
 ## Acknowledgement
 
