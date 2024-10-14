@@ -39,11 +39,11 @@
 ```
 
 ## Introduction
- Propulsion, a  parameter-efficient fine-tuning (PEFT) method designed to optimize task-specific performance while drastically reducing computational overhead
+ LLMMixer is a framework that combines multiscale time series decomposition with large language models to enhance forecasting accuracy by capturing both short-term and long-term temporal patterns.
 
 <p align="center">
 
-<img src="./figures/propulsion_method.png" width="270">
+<img src="./figures/llmmixer.png" width="270">
 
 </p>
 
