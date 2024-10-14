@@ -1,4 +1,4 @@
-model_name="TimeMixer"
+model_name="LLMMixer"
 
 seq_len=192
 e_layers=2
