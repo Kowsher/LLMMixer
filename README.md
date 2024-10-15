@@ -30,12 +30,8 @@
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our research:
 
 ```
-@inproceedings{wang2023timemixer,
-  title={TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting},
-  author={Wang, Shiyu and Wu, Haixu and Shi, Xiaoming and Hu, Tengge and Luo, Huakun and Ma, Lintao and Zhang, James Y and ZHOU, JUN},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2024}
-}
+
+
 ```
 
 ## Introduction
