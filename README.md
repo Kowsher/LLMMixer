@@ -35,7 +35,7 @@
 ```
 
 ## Introduction
- LLMMixer is a framework that combines multiscale time series decomposition with large language models to enhance forecasting accuracy by capturing both short-term and long-term temporal patterns.
+LLMMixer is an advanced framework designed to improve forecasting accuracy by integrating multiscale time series decomposition with the power of large language models (LLMs). By capturing both short-term and long-term temporal patterns, LLMMixer enhances the model's ability to understand complex trends, making it highly effective for time series forecasting tasks.
 
 <p align="center">
 
