@@ -30,7 +30,12 @@
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our research:
 
 ```
-
+@article{kowsher2024llm,
+  title={LLM-Mixer: Multiscale Mixing in LLMs for Time Series Forecasting},
+  author={Kowsher, Md and Sobuj, Md Shohanur Islam and Prottasha, Nusrat Jahan and Alanis, E Alejandro and Garibay, Ozlem Ozmen and Yousefi, Niloofar},
+  journal={arXiv preprint arXiv:2410.11674},
+  year={2024}
+}
 
 ```
 
