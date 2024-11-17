@@ -591,7 +591,16 @@ class Model(nn.Module):
         # Past Decomposable Mixing as encoder for past
 
         
-        inputs_embeds = torch.cat(enc_out_list, dim=1).permute(0, 2, 1)
+
+        for i in range(self.layer):
+            enc_out_list = self.pdm_blocks[i](enc_out_list)
+        # Future Multipredictor Mixing as decoder for future
+        hidden_list = self.future_multi_mixing(B, enc_out_list, x_list)
+
+        hidden_info = torch.stack(hidden_list, dim=-1).sum(-1)
+
+
+        inputs_embeds = hidden_info.permute(0, 2, 1)
 
         
         #print('inputs_embeds', inputs_embeds.shape)
@@ -615,25 +624,17 @@ class Model(nn.Module):
 
         #print('hidden_states', hidden_states.shape)
 
-        hidden_states = hidden_states[:, prompt_embeddings.shape[1]:, :old_pad].permute(0, 2, 1)
+        dec_out = hidden_states[:, prompt_embeddings.shape[1]:, :old_pad].permute(0, 2, 1)
+        dec_out = self.decoder(dec_out) + hidden_info
         #print(hidden_states.shape)
         #hidden_states = self.merge(hidden_states).permute(0, 2, 1)
 
         #print('hidden_states', hidden_states.shape)
         #print('inputs_embeds', hidden_states.shape)
 
-        split_sizes = [tensor.size(1) for tensor in enc_out_list]  # Get the sizes of each tensor along dimension 1
-        enc_out_list  = list(torch.split(hidden_states, split_sizes, dim=1))  # Convert tuple to list
-        for i in range(self.layer):
-            enc_out_list = self.pdm_blocks[i](enc_out_list)
-        # Future Multipredictor Mixing as decoder for future
-        dec_out_list = self.future_multi_mixing(B, enc_out_list, x_list)
-
-        dec_out = torch.stack(dec_out_list, dim=-1).sum(-1)
-
                 
         dec_out = self.normalize_layers[0](dec_out, 'denorm')
-        dec_out = self.decoder(dec_out)
+        #dec_out = self.decoder(dec_out)
         return dec_out
 
     def future_multi_mixing(self, B, enc_out_list, x_list):
