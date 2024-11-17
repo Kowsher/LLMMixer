@@ -13,7 +13,7 @@ batch_size=128
 learning_rate=0.001
 pred_len=96
 
-!python -u TimeMixer/run.py \
+!python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
   --root_path  /home/kowsher/tabllm \
